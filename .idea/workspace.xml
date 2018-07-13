@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="233">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,14 +34,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state relative-caret-position="135">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
-                <element signature="e#160#161#0" expanded="true" />
-                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -369,8 +369,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" />
       </list>
     </option>
   </component>
@@ -562,12 +562,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531475472833</updated>
-      <workItem from="1531475478567" duration="2271000" />
+      <workItem from="1531475478567" duration="2686000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 31m 14s.xml">
+      <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 35m 07s.xml">
+      <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 35m 45s.xml">
+      <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 36m 58s.xml">
+      <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2271000" />
+    <option name="totallyTimeSpent" value="2686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -580,20 +594,21 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info anchor="bottom" id="Build" visible="true" weight="0.31030303" />
+      <window_info anchor="bottom" id="Build" weight="0.31030303" />
       <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
@@ -627,23 +642,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="135">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="233">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
-            <element signature="e#160#161#0" expanded="true" />
-            <element signature="e#191#192#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

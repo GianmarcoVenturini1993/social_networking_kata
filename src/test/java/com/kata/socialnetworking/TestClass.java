@@ -11,26 +11,17 @@ import static org.junit.Assert.*;
 
 public class TestClass {
 
-    private SocialUser alice;
-    private SocialUser bob;
-    private SocialUser charlie;
-
-
-    @Before
-    public void setUp() {
-        SocialUser alice = new SocialUser("Alice");
-        SocialUser bob = new SocialUser("Bob");
-        SocialUser charlie = new SocialUser("Charlie");
-    }
-
+    private SocialUser alice = new SocialUser("Alice");;
+    private SocialUser bob = new SocialUser("Bob");
+    private SocialUser charlie = new SocialUser("Charlie");;
 
     @Test
     public void postingOwnTimelineTest() {
 
-        String input = "Alice -> I love the weather today";
+        String input = "I love the weather today";
         alice.updateTimeline(input);
 
-        assertThat(alice.getTimeline()).isEqualTo("Alice -> I love the weather today");
+        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\n");
     }
 
 
