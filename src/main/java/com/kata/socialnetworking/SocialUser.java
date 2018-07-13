@@ -24,7 +24,7 @@ public class SocialUser {
 
         HashMap<String, String> post = new HashMap<>();
         post.put("body", input);
-        post.put("date", date.toString().substring(0, 19));
+        post.put("date", date.toString());
 
         this.timeline.add(post);
 
@@ -32,9 +32,8 @@ public class SocialUser {
 
     public String getTimeline() throws ParseException {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss");
+        SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
         Date now = new Date();
-        //String refer = now.toString().substring(0, 19);
         Date curr_date = formatter.parse(now.toString());
 
         StringBuilder result = new StringBuilder();
@@ -42,7 +41,7 @@ public class SocialUser {
         for (int i = timeline.size() - 1; i >= 0; i--) {
             Date postTime = formatter.parse(timeline.get(i).get("date"));
             System.out.println();
-            result.append(timeline.get(i).get("body") + " " + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago" + "\n");
+            result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
         }
 
         return result.toString();
