@@ -51,5 +51,13 @@ public class SocialUser {
 
         return result.toString();
     }
+
+    public void follows(SocialUser alice) {
+    }
+
+    public String printWall() {
+
+        return "";
+    }
 }
 

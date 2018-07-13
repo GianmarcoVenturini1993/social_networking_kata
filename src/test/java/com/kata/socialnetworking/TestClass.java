@@ -54,5 +54,21 @@ public class TestClass {
         assertThat(bob.getTimeline()).isEqualTo("Good game though. (0 seconds ago)\nDamn! We lost! (0 seconds ago)\n");
     }
 
+    @Test
+    public void followingAndprintingWallTest() throws ParseException {
+
+        String input = "I'm in New York today! Anyone wants to have a coffee?";
+        String inputAlice = "I love the weather today";
+
+        alice.updateTimeline(inputAlice);
+        charlie.updateTimeline(input);
+        charlie.follows(alice);
+
+
+        assertThat(alice.getTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
+        assertThat(charlie.getTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (0 seconds ago)\n");
+        assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (2 seconds ago)\nAlice - I love the weather today (5 minutes ago)\n");
+        }
+
 
 }
