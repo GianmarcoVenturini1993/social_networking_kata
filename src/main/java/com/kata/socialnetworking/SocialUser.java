@@ -1,23 +1,51 @@
 package com.kata.socialnetworking;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+
+import org.ocpsoft.prettytime.PrettyTime;
+
 public class SocialUser {
 
     private String name;
-    private StringBuilder timeline;
+    private ArrayList<HashMap<String, String>> timeline;
 
     public SocialUser(String str) {
         this.name = str;
-        this.timeline = new StringBuilder();
+        this.timeline = new ArrayList<>();
     }
 
 
     public void updateTimeline(String input) {
-        this.timeline.append(input + "\n"); //no date for now
+
+        Date date = new Date();
+
+        HashMap<String, String> post = new HashMap<>();
+        post.put("body", input);
+        post.put("date", date.toString().substring(0, 19));
+
+        this.timeline.add(post);
+
     }
 
-    public String getTimeline() {
+    public String getTimeline() throws ParseException {
 
-        return timeline.toString();
+        SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss");
+        Date now = new Date();
+        //String refer = now.toString().substring(0, 19);
+        Date curr_date = formatter.parse(now.toString());
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = timeline.size() - 1; i >= 0; i--) {
+            Date postTime = formatter.parse(timeline.get(i).get("date"));
+            System.out.println();
+            result.append(timeline.get(i).get("body") + " " + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago" + "\n");
+        }
+
+        return result.toString();
     }
 }
 

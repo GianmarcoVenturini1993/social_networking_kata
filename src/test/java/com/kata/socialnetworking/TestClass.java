@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import java.text.ParseException;
+
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.Assert.*;
 
@@ -16,7 +18,7 @@ public class TestClass {
     private SocialUser charlie = new SocialUser("Charlie");;
 
     @Test
-    public void postingOwnTimelineTest() {
+    public void postingOwnTimelineTest() throws ParseException {
 
         String input = "I love the weather today";
         alice.updateTimeline(input);
@@ -25,7 +27,7 @@ public class TestClass {
     }
 
     @Test
-    public void postingOwnTimelineMultipleTest() {
+    public void postingOwnTimelineMultipleTest() throws ParseException {
 
         String input = "I love the weather today";
         String input2 = "This is a great day";
@@ -36,7 +38,7 @@ public class TestClass {
     }
 
     @Test
-    public void postingOwnTimelineMultipleUserTest() {
+    public void postingOwnTimelineMultipleUserTest() throws ParseException {
 
         String input = "I love the weather today";
         String input2 = "This is a great day";
