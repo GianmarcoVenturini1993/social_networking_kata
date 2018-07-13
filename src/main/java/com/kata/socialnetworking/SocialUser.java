@@ -11,12 +11,17 @@ public class SocialUser {
 
     private String name;
     private ArrayList<HashMap<String, String>> timeline;
+    private ArrayList<SocialUser> following;
 
     public SocialUser(String str) {
         this.name = str;
         this.timeline = new ArrayList<>();
+        this.following = new ArrayList<>();
     }
 
+    public ArrayList<HashMap<String, String>> getTimeline() {
+        return timeline;
+    }
 
     public void updateTimeline(String input) {
 
@@ -30,7 +35,7 @@ public class SocialUser {
 
     }
 
-    public String getTimeline() throws ParseException {
+    public String printTimeline() throws ParseException {
 
         SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
         Date now = new Date();
@@ -52,11 +57,29 @@ public class SocialUser {
         return result.toString();
     }
 
-    public void follows(SocialUser alice) {
+    public void follows(SocialUser user) {
+        following.add(user);
     }
 
     public String printWall() {
 
+        ArrayList<HashMap<String, String>> container = new ArrayList<>();
+
+        //adding all timeline's post
+        for (HashMap<String, String> el : timeline) {
+            container.add(el);
+        }
+
+        //adding all followed user's timeline posts
+        for (SocialUser us : following) {
+            for (HashMap<String, String> el : us.getTimeline()) {
+                container.add(el);
+            }
+        }
+
+        StringBuilder result = new StringBuilder();
+
+        //must be able to sort a global arrayList containing both timeline posts and followed user's posts
         return "";
     }
 }

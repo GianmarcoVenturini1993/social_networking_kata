@@ -1,14 +1,11 @@
 package com.kata.socialnetworking;
 
 
-import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.text.ParseException;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.Assert.*;
 
 
 public class TestClass {
@@ -23,7 +20,7 @@ public class TestClass {
         String input = "I love the weather today";
         alice.updateTimeline(input);
 
-        assertThat(alice.getTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
     }
 
     @Test
@@ -34,7 +31,7 @@ public class TestClass {
         alice.updateTimeline(input);
         alice.updateTimeline(input2);
 
-        assertThat(alice.getTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
     }
 
     @Test
@@ -50,8 +47,8 @@ public class TestClass {
         bob.updateTimeline(inputBob);
         bob.updateTimeline(inputBob2);
 
-        assertThat(alice.getTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
-        assertThat(bob.getTimeline()).isEqualTo("Good game though. (0 seconds ago)\nDamn! We lost! (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
+        assertThat(bob.printTimeline()).isEqualTo("Good game though. (0 seconds ago)\nDamn! We lost! (0 seconds ago)\n");
     }
 
     @Test
@@ -65,8 +62,8 @@ public class TestClass {
         charlie.follows(alice);
 
 
-        assertThat(alice.getTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
-        assertThat(charlie.getTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
+        assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (0 seconds ago)\n");
         assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (2 seconds ago)\nAlice - I love the weather today (5 minutes ago)\n");
         }
 
