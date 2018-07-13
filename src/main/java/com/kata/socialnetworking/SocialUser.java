@@ -41,7 +41,12 @@ public class SocialUser {
         for (int i = timeline.size() - 1; i >= 0; i--) {
             Date postTime = formatter.parse(timeline.get(i).get("date"));
             System.out.println();
-            result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
+
+            //specs say either 'minutes ago' or 'seconds ago'... must manage this feature
+            if (TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) != 0)
+                result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
+            else
+                result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toSeconds(curr_date.getTime() - postTime.getTime()) + " seconds ago)" + "\n");
         }
 
         return result.toString();
