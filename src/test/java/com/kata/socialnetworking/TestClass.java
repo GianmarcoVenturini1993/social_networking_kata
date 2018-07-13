@@ -35,5 +35,22 @@ public class TestClass {
         assertThat(alice.getTimeline()).isEqualTo("I love the weather today\nThis is a great day\n");
     }
 
+    @Test
+    public void postingOwnTimelineMultipleUserTest() {
+
+        String input = "I love the weather today";
+        String input2 = "This is a great day";
+        String inputBob = "Damn! We lost!";
+        String inputBob2 = "Good game though.";
+
+        alice.updateTimeline(input);
+        alice.updateTimeline(input2);
+        bob.updateTimeline(inputBob);
+        bob.updateTimeline(inputBob2);
+
+        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\nThis is a great day\n");
+        assertThat(bob.getTimeline()).isEqualTo("Damn! We lost!\nGood game though.\n");
+    }
+
 
 }
