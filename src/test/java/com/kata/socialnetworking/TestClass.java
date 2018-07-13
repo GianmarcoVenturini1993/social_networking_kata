@@ -24,5 +24,16 @@ public class TestClass {
         assertThat(alice.getTimeline()).isEqualTo("I love the weather today\n");
     }
 
+    @Test
+    public void postingOwnTimelineMultipleTest() {
+
+        String input = "I love the weather today";
+        String input2 = "This is a great day";
+        alice.updateTimeline(input);
+        alice.updateTimeline(input2);
+
+        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\nThis is a great day\n");
+    }
+
 
 }

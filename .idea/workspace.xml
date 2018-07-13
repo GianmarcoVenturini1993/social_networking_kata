@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +24,8 @@
       <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="392">
+              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -481,9 +480,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestClass">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="social-networking-kata_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kata.socialnetworking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kata.socialnetworking" />
+      <option name="MAIN_CLASS_NAME" value="com.kata.socialnetworking.TestClass" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="TestClass.postingOwnTimelineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-networking-kata_test" />
@@ -546,8 +568,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TestClass.postingOwnTimelineTest" />
+      <item itemvalue="JUnit.TestClass" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass" />
         <item itemvalue="JUnit.TestClass.postingOwnTimelineTest" />
       </list>
     </recent_temporary>
@@ -562,7 +589,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531475472833</updated>
-      <workItem from="1531475478567" duration="2686000" />
+      <workItem from="1531475478567" duration="2802000" />
     </task>
     <servers />
   </component>
@@ -579,9 +606,15 @@
     <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 36m 58s.xml">
       <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineTest - 2018.07.13 at 12h 38m 07s.xml">
+      <configuration name="TestClass.postingOwnTimelineTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass - 2018.07.13 at 12h 39m 27s.xml">
+      <configuration name="TestClass" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2686000" />
+    <option name="totallyTimeSpent" value="2802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -655,8 +688,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="392">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
