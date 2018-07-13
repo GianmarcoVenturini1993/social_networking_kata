@@ -24,8 +24,8 @@
       <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            <state relative-caret-position="393">
+              <caret line="51" column="110" selection-start-line="51" selection-start-column="110" selection-end-line="51" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -614,7 +614,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531475472833</updated>
-      <workItem from="1531475478567" duration="2964000" />
+      <workItem from="1531475478567" duration="3301000" />
     </task>
     <servers />
   </component>
@@ -640,9 +640,12 @@
     <history-entry file="TestClass - 2018.07.13 at 12h 40m 32s.xml">
       <configuration name="TestClass" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineMultipleUserTest - 2018.07.13 at 12h 42m 48s.xml">
+      <configuration name="TestClass.postingOwnTimelineMultipleUserTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2964000" />
+    <option name="totallyTimeSpent" value="3301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -666,10 +669,10 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="right" id="Gradle" />
       <window_info anchor="right" id="Theme Preview" />
@@ -716,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        <state relative-caret-position="393">
+          <caret line="51" column="110" selection-start-line="51" selection-start-column="110" selection-end-line="51" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

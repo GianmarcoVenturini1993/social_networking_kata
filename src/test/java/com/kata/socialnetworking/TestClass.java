@@ -21,7 +21,7 @@ public class TestClass {
         String input = "I love the weather today";
         alice.updateTimeline(input);
 
-        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\n");
+        assertThat(alice.getTimeline()).isEqualTo("I love the weather today (moments ago)\n");
     }
 
     @Test
@@ -32,7 +32,7 @@ public class TestClass {
         alice.updateTimeline(input);
         alice.updateTimeline(input2);
 
-        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\nThis is a great day\n");
+        assertThat(alice.getTimeline()).isEqualTo("This is a great day (moments ago)\nI love the weather today (moments ago)\n");
     }
 
     @Test
@@ -48,8 +48,8 @@ public class TestClass {
         bob.updateTimeline(inputBob);
         bob.updateTimeline(inputBob2);
 
-        assertThat(alice.getTimeline()).isEqualTo("I love the weather today\nThis is a great day\n");
-        assertThat(bob.getTimeline()).isEqualTo("Damn! We lost!\nGood game though.\n");
+        assertThat(alice.getTimeline()).isEqualTo("This is a great day (moments ago)\nI love the weather today (moments ago)\n");
+        assertThat(bob.getTimeline()).isEqualTo("Good game though. (moments ago)\nDamn! We lost! (moments ago)\n");
     }
 
 
