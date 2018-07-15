@@ -74,7 +74,33 @@ public class TestClass {
         assertThat(alice.printTimeline()).isEqualTo("I love the weather today (8 seconds ago)\n");
         assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\n");
         assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\nAlice - I love the weather today (8 seconds ago)\n");
-        }
+    }
+
+    @Test
+    public void followingAndprintingmultipleUserWallTest() throws ParseException, InterruptedException {
+
+        String inputAlice = "I love the weather today";
+        String inputCharlie = "I'm in New York today! Anyone wants to have a coffee?";
+        String inputBob = "Damn! We lost!";
+        String inputBob2 = "Good game though.";
+
+        alice.updateTimeline(inputAlice);
+        Thread.sleep(4000);
+        charlie.updateTimeline(inputCharlie);
+        Thread.sleep(4000);
+        charlie.follows(alice);
+
+        bob.updateTimeline(inputBob);
+        Thread.sleep(2000);
+        bob.updateTimeline(inputBob2);
+        Thread.sleep(1000);
+        charlie.follows(bob);
+
+
+        assertThat(alice.printTimeline()).isEqualTo("I love the weather today (11 seconds ago)\n");
+        assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (7 seconds ago)\n");
+        assertThat(charlie.printWall()).isEqualTo("Bob - Good game though. (1 seconds ago)\nBob - Damn! We lost! (3 seconds ago)\nCharlie - I'm in New York today! Anyone wants to have a coffee? (7 seconds ago)\nAlice - I love the weather today (11 seconds ago)\n");
+    }
 
 
 }

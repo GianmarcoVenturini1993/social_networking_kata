@@ -40,8 +40,7 @@ public class SocialUser {
     public String printTimeline() throws ParseException {
 
         SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
-        Date now = new Date();
-        Date curr_date = formatter.parse(now.toString());
+        Date curr_date = getCurrentDate(formatter);
 
         StringBuilder result = new StringBuilder();
 
@@ -65,8 +64,8 @@ public class SocialUser {
     public String printWall() throws ParseException {
 
         SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
-        Date now = new Date();
-        Date curr_date = formatter.parse(now.toString());
+        Date curr_date = getCurrentDate(formatter);
+
         ArrayList<HashMap<String, String>> container = new ArrayList<>();
 
         //adding all timeline's post
@@ -89,7 +88,6 @@ public class SocialUser {
 
         StringBuilder result = new StringBuilder();
 
-        //must be able to sort a global arrayList containing both timeline posts and followed user's posts
         /*
         Sorting feed...per date
          */
@@ -120,6 +118,14 @@ public class SocialUser {
         }
 
         return result.toString();
+    }
+
+    private Date getCurrentDate(SimpleDateFormat form) throws ParseException {
+
+        Date now = new Date();
+        Date curr_date = form.parse(now.toString());
+
+        return curr_date;
     }
 }
 

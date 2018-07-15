@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +25,8 @@
       <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="333">
+              <caret line="100" column="129" lean-forward="true" selection-start-line="100" selection-start-column="129" selection-end-line="100" selection-end-column="129" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,12 +37,14 @@
       <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1396">
-              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+            <state relative-caret-position="-50">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -490,7 +493,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.postingOwnTimelineMultipleUserTest">
+  <component name="RunManager" selected="JUnit.TestClass.followingAndprintingmultipleUserWallTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -517,7 +520,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestClass.followingAndprintingWallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestClass.followingAndprintingmultipleUserWallTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="social-networking-kata_test" />
       <extension name="coverage">
         <pattern>
@@ -529,7 +532,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kata.socialnetworking" />
       <option name="MAIN_CLASS_NAME" value="com.kata.socialnetworking.TestClass" />
-      <option name="METHOD_NAME" value="followingAndprintingWallTest" />
+      <option name="METHOD_NAME" value="followingAndprintingmultipleUserWallTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -651,16 +654,16 @@
       <item itemvalue="JUnit.TestClass.postingOwnTimelineTest" />
       <item itemvalue="JUnit.TestClass" />
       <item itemvalue="JUnit.TestClass.postingOwnTimelineMultipleUserTest" />
-      <item itemvalue="JUnit.TestClass.followingAndprintingWallTest" />
       <item itemvalue="JUnit.TestClass.postingOwnTimelineMultipleTest" />
+      <item itemvalue="JUnit.TestClass.followingAndprintingmultipleUserWallTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.followingAndprintingmultipleUserWallTest" />
+        <item itemvalue="JUnit.TestClass" />
         <item itemvalue="JUnit.TestClass.postingOwnTimelineMultipleUserTest" />
         <item itemvalue="JUnit.TestClass.postingOwnTimelineMultipleTest" />
         <item itemvalue="JUnit.TestClass.postingOwnTimelineTest" />
-        <item itemvalue="JUnit.TestClass.followingAndprintingWallTest" />
-        <item itemvalue="JUnit.TestClass" />
       </list>
     </recent_temporary>
   </component>
@@ -675,20 +678,11 @@
       <option name="presentableId" value="Default" />
       <updated>1531475472833</updated>
       <workItem from="1531475478567" duration="9080000" />
-      <workItem from="1531681274122" duration="3374000" />
+      <workItem from="1531681274122" duration="4198000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 00m 56s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 01m 16s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 03m 21s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 04m 23s.xml">
       <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
     </history-entry>
@@ -710,9 +704,18 @@
     <history-entry file="TestClass_postingOwnTimelineMultipleTest - 2018.07.15 at 22h 10m 20s.xml">
       <configuration name="TestClass.postingOwnTimelineMultipleTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestClass_postingOwnTimelineMultipleUserTest - 2018.07.15 at 22h 11m 47s.xml">
+      <configuration name="TestClass.postingOwnTimelineMultipleUserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass - 2018.07.15 at 22h 18m 37s.xml">
+      <configuration name="TestClass" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingmultipleUserWallTest - 2018.07.15 at 22h 27m 35s.xml">
+      <configuration name="TestClass.followingAndprintingmultipleUserWallTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12454000" />
+    <option name="totallyTimeSpent" value="13278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -783,7 +786,9 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,20 +803,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1396">
-          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="-50">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="333">
+          <caret line="100" column="129" lean-forward="true" selection-start-line="100" selection-start-column="129" selection-end-line="100" selection-end-column="129" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
