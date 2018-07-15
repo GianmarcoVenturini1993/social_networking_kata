@@ -54,17 +54,17 @@ public class TestClass {
     @Test
     public void followingAndprintingWallTest() throws ParseException {
 
-        String input = "I'm in New York today! Anyone wants to have a coffee?";
         String inputAlice = "I love the weather today";
+        String inputCharlie = "I'm in New York today! Anyone wants to have a coffee?";
 
         alice.updateTimeline(inputAlice);
-        charlie.updateTimeline(input);
+        charlie.updateTimeline(inputCharlie);
         charlie.follows(alice);
 
 
         assertThat(alice.printTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
         assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (0 seconds ago)\n");
-        assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (2 seconds ago)\nAlice - I love the weather today (5 minutes ago)\n");
+        assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (0 seconds ago)\nAlice - I love the weather today (0 seconds ago)\n");
         }
 
 
