@@ -90,7 +90,25 @@ public class SocialUser {
         StringBuilder result = new StringBuilder();
 
         //must be able to sort a global arrayList containing both timeline posts and followed user's posts
-        //not sorted:
+        /*
+        Sorting feed...per date
+         */
+
+        for(int i = 0; i < container.size(); i++) {
+            boolean flag = false;
+
+            for(int j = 0; j < container.size()-1; j++) {
+                if (formatter.parse(container.get(j).get("date")).after(formatter.parse(container.get(j+1).get("date")))) {
+                    Collections.swap(container, j, j+1);
+                    flag = true;
+                }
+            }
+
+            if (!flag) break;
+        }
+
+
+
         for (int i = container.size() - 1; i >= 0; i--) {
             Date postTime = formatter.parse(container.get(i).get("date"));
 

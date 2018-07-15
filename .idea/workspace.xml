@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
     </list>
@@ -23,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+            <state relative-caret-position="322">
+              <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+            <state relative-caret-position="1396">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#505#506#0" expanded="true" />
@@ -380,8 +379,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/Test.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" />
       </list>
     </option>
   </component>
@@ -652,44 +651,44 @@
       <option name="presentableId" value="Default" />
       <updated>1531475472833</updated>
       <workItem from="1531475478567" duration="9080000" />
-      <workItem from="1531681274122" duration="1445000" />
+      <workItem from="1531681274122" duration="3087000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestClass - 2018.07.13 at 13h 52m 27s.xml">
-      <configuration name="TestClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass - 2018.07.13 at 14h 14m 55s.xml">
-      <configuration name="TestClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.13 at 14h 38m 46s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.13 at 14h 39m 05s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass - 2018.07.15 at 21h 25m 00s.xml">
-      <configuration name="TestClass" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 25m 47s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_postingOwnTimelineMultipleUserTest - 2018.07.15 at 21h 26m 57s.xml">
-      <configuration name="TestClass.postingOwnTimelineMultipleUserTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 27m 09s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 31m 57s.xml">
-      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 32m 41s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 39m 28s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 21h 47m 58s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 00m 56s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 01m 16s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 03m 21s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 04m 23s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 05m 03s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 05m 43s.xml">
+      <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestClass_followingAndprintingWallTest - 2018.07.15 at 22h 06m 30s.xml">
       <configuration name="TestClass.followingAndprintingWallTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10525000" />
+    <option name="totallyTimeSpent" value="12167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -773,24 +772,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="59" column="41" lean-forward="true" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+        <state relative-caret-position="1396">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#505#506#0" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
