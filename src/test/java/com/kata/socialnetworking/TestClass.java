@@ -15,27 +15,30 @@ public class TestClass {
     private SocialUser charlie = new SocialUser("Charlie");;
 
     @Test
-    public void postingOwnTimelineTest() throws ParseException {
+    public void postingOwnTimelineTest() throws ParseException, InterruptedException {
 
         String input = "I love the weather today";
         alice.updateTimeline(input);
 
-        assertThat(alice.printTimeline()).isEqualTo("I love the weather today (0 seconds ago)\n");
+        Thread.sleep(5000);
+        assertThat(alice.printTimeline()).isEqualTo("I love the weather today (5 seconds ago)\n");
     }
 
     @Test
-    public void postingOwnTimelineMultipleTest() throws ParseException {
+    public void postingOwnTimelineMultipleTest() throws ParseException, InterruptedException {
 
         String input = "I love the weather today";
         String input2 = "This is a great day";
         alice.updateTimeline(input);
+        Thread.sleep(2000);
         alice.updateTimeline(input2);
+        Thread.sleep(1000);
 
-        assertThat(alice.printTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("This is a great day (1 seconds ago)\nI love the weather today (3 seconds ago)\n");
     }
 
     @Test
-    public void postingOwnTimelineMultipleUserTest() throws ParseException {
+    public void postingOwnTimelineMultipleUserTest() throws ParseException, InterruptedException {
 
         String input = "I love the weather today";
         String input2 = "This is a great day";
@@ -43,12 +46,16 @@ public class TestClass {
         String inputBob2 = "Good game though.";
 
         alice.updateTimeline(input);
+        Thread.sleep(1000);
         alice.updateTimeline(input2);
+        Thread.sleep(1000);
         bob.updateTimeline(inputBob);
+        Thread.sleep(2000);
         bob.updateTimeline(inputBob2);
+        Thread.sleep(2000);
 
-        assertThat(alice.printTimeline()).isEqualTo("This is a great day (0 seconds ago)\nI love the weather today (0 seconds ago)\n");
-        assertThat(bob.printTimeline()).isEqualTo("Good game though. (0 seconds ago)\nDamn! We lost! (0 seconds ago)\n");
+        assertThat(alice.printTimeline()).isEqualTo("This is a great day (5 seconds ago)\nI love the weather today (6 seconds ago)\n");
+        assertThat(bob.printTimeline()).isEqualTo("Good game though. (2 seconds ago)\nDamn! We lost! (4 seconds ago)\n");
     }
 
     @Test
