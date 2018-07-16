@@ -10,9 +10,9 @@ import static org.assertj.core.api.Assertions.*;
 
 public class TestClass {
 
-    private SocialUser alice = new SocialUser("Alice");;
+    private SocialUser alice = new SocialUser("Alice");
     private SocialUser bob = new SocialUser("Bob");
-    private SocialUser charlie = new SocialUser("Charlie");;
+    private SocialUser charlie = new SocialUser("Charlie");
 
     @Test
     public void postingOwnTimelineTest() throws ParseException, InterruptedException {

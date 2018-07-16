@@ -89,7 +89,7 @@ public class SocialUser {
         StringBuilder result = new StringBuilder();
 
         /*
-        Sorting feed...per date
+        Sorting feed...per date, bubblesort
          */
 
         for(int i = 0; i < container.size(); i++) {
