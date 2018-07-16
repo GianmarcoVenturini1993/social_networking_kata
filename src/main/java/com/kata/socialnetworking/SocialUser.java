@@ -10,6 +10,7 @@ public class SocialUser {
     private String name;
     private ArrayList<HashMap<String, String>> timeline;
     private ArrayList<SocialUser> following;
+    private static final SimpleDateFormat FORMATTER = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
 
     public SocialUser(String str) {
         this.name = str;
@@ -39,22 +40,9 @@ public class SocialUser {
 
     public String printTimeline() throws ParseException {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
-        Date curr_date = getCurrentDate(formatter);
+        Date curr_date = getCurrentDate();
 
-        StringBuilder result = new StringBuilder();
-
-        for (int i = timeline.size() - 1; i >= 0; i--) {
-            Date postTime = formatter.parse(timeline.get(i).get("date"));
-
-            //specs say either 'minutes ago' or 'seconds ago'... must manage this feature
-            if (TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) != 0)
-                result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
-            else
-                result.append(timeline.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toSeconds(curr_date.getTime() - postTime.getTime()) + " seconds ago)" + "\n");
-        }
-
-        return result.toString();
+        return getOutput(timeline, curr_date);
     }
 
     public void follows(SocialUser user) {
@@ -63,12 +51,49 @@ public class SocialUser {
 
     public String printWall() throws ParseException {
 
-        SimpleDateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss zzz yyyy", Locale.US);
-        Date curr_date = getCurrentDate(formatter);
+        Date curr_date = getCurrentDate();
+
+        ArrayList<HashMap<String, String>> container = getAllPostsFromFeed();
+        sortPosts(container);
+
+        return getOutput(container, curr_date);
+
+    }
+
+    private Date getCurrentDate() throws ParseException {
+
+        Date now = new Date();
+        return FORMATTER.parse(now.toString());
+
+    }
+
+    private boolean compareMinutes(Date a, Date b) {
+
+        return TimeUnit.MILLISECONDS.toMinutes(a.getTime() - b.getTime()) == 0;
+
+    }
+
+    private String getOutput(ArrayList<HashMap<String, String>> list, Date current_date) throws ParseException{
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            Date postTime = FORMATTER.parse(list.get(i).get("date"));
+
+            if (!compareMinutes(current_date, postTime))
+                result.append(list.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(current_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
+            else
+                result.append(list.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toSeconds(current_date.getTime() - postTime.getTime()) + " seconds ago)" + "\n");
+        }
+
+        return result.toString();
+    }
+
+    private ArrayList<HashMap<String, String>> getAllPostsFromFeed() {
 
         ArrayList<HashMap<String, String>> container = new ArrayList<>();
 
-        //adding all timeline's post
+        //adding all timeline's posts with original user's name embedded
         for (HashMap<String, String> el : timeline) {
             HashMap<String, String> timelineElement = new HashMap<>();
             timelineElement.put("body", name + " - " + el.get("body"));
@@ -76,7 +101,7 @@ public class SocialUser {
             container.add(timelineElement);
         }
 
-        //adding all followed user's timeline posts
+        //adding all followed user's timeline posts with each user's name embedded
         for (SocialUser us : following) {
             for (HashMap<String, String> el : us.getTimeline()) {
                 HashMap<String, String> followedElement = new HashMap<>();
@@ -86,46 +111,23 @@ public class SocialUser {
             }
         }
 
-        StringBuilder result = new StringBuilder();
+        return container;
+    }
 
-        /*
-        Sorting feed...per date
-         */
+    private void sortPosts(ArrayList<HashMap<String, String>> posts) throws ParseException{
 
-        for(int i = 0; i < container.size(); i++) {
+        //bubblesort
+        for(int i = 0; i < posts.size(); i++) {
             boolean flag = false;
 
-            for(int j = 0; j < container.size()-1; j++) {
-                if (formatter.parse(container.get(j).get("date")).after(formatter.parse(container.get(j+1).get("date")))) {
-                    Collections.swap(container, j, j+1);
+            for(int j = 0; j < posts.size()-1; j++) {
+                if (FORMATTER.parse(posts.get(j).get("date")).after(FORMATTER.parse(posts.get(j+1).get("date")))) {
+                    Collections.swap(posts, j, j+1);
                     flag = true;
                 }
             }
-
             if (!flag) break;
         }
-
-
-
-        for (int i = container.size() - 1; i >= 0; i--) {
-            Date postTime = formatter.parse(container.get(i).get("date"));
-
-            //specs say either 'minutes ago' or 'seconds ago'... must manage this feature
-            if (TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) != 0)
-                result.append(container.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toMinutes(curr_date.getTime() - postTime.getTime()) + " minutes ago)" + "\n");
-            else
-                result.append(container.get(i).get("body") + " (" + TimeUnit.MILLISECONDS.toSeconds(curr_date.getTime() - postTime.getTime()) + " seconds ago)" + "\n");
-        }
-
-        return result.toString();
-    }
-
-    private Date getCurrentDate(SimpleDateFormat form) throws ParseException {
-
-        Date now = new Date();
-        Date curr_date = form.parse(now.toString());
-
-        return curr_date;
     }
 }
 
