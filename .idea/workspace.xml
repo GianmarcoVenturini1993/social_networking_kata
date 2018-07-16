@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -23,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="160">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,26 +38,38 @@
       <file leaf-file-name="SocialUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
-              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+            <state relative-caret-position="390">
+              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#SocialUser#0;class#SocialUser#0" />
                 <element signature="method#updateTimeline#0;class#SocialUser#0" />
+                <element signature="method#printTimeline#0;class#SocialUser#0" />
+                <element signature="method#printWall#0;class#SocialUser#0" />
                 <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+                <element signature="method#compareMinutes#0;class#SocialUser#0" />
+                <element signature="method#getOutput#0;class#SocialUser#0" />
+                <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+                <element signature="method#sortPosts#0;class#SocialUser#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialNetwork.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SocialNetwork.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -387,6 +399,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/Users.java" />
       </list>
     </option>
   </component>
@@ -400,9 +413,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -410,8 +422,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -671,6 +683,7 @@
       <updated>1531475472833</updated>
       <workItem from="1531475478567" duration="9080000" />
       <workItem from="1531681274122" duration="4198000" />
+      <workItem from="1531766955778" duration="3585000" />
     </task>
     <servers />
   </component>
@@ -707,7 +720,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18207000" />
+    <option name="totallyTimeSpent" value="22377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -734,41 +747,17 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31030303" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" weight="0.32969698" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31030303" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="sbt" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.31030303" />
-      <window_info anchor="right" id="Gradle" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,10 +768,46 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#SocialUser#0;class#SocialUser#0" />
+            <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
+            <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -801,7 +826,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#SocialUser#0;class#SocialUser#0" />
             <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
             <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
           </folding>
         </state>
       </provider>
@@ -838,7 +869,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#SocialUser#0;class#SocialUser#0" />
             <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
             <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
           </folding>
         </state>
       </provider>
@@ -859,7 +896,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#SocialUser#0;class#SocialUser#0" />
             <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
             <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
           </folding>
         </state>
       </provider>
@@ -899,7 +942,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#SocialUser#0;class#SocialUser#0" />
             <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
             <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
           </folding>
         </state>
       </provider>
@@ -912,33 +961,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+        <state relative-caret-position="390">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#SocialUser#0;class#SocialUser#0" />
             <element signature="method#updateTimeline#0;class#SocialUser#0" />
+            <element signature="method#printTimeline#0;class#SocialUser#0" />
+            <element signature="method#printWall#0;class#SocialUser#0" />
             <element signature="method#getCurrentDate#0;class#SocialUser#0" />
+            <element signature="method#compareMinutes#0;class#SocialUser#0" />
+            <element signature="method#getOutput#0;class#SocialUser#0" />
+            <element signature="method#getAllPostsFromFeed#0;class#SocialUser#0" />
+            <element signature="method#sortPosts#0;class#SocialUser#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="160">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
