@@ -102,5 +102,18 @@ public class TestClass {
         assertThat(charlie.printWall()).isEqualTo("Bob - Good game though. (1 seconds ago)\nBob - Damn! We lost! (3 seconds ago)\nCharlie - I'm in New York today! Anyone wants to have a coffee? (7 seconds ago)\nAlice - I love the weather today (11 seconds ago)\n");
     }
 
+    @Test
+    public void userCreation() {
+
+        SocialUser jimmy = Users.createUser("Jimmy");
+        SocialUser timmy = Users.createUser("Timmy");
+
+        assertThat(jimmy.getName()).isEqualTo("Jimmy");
+        assertThat(timmy.getName()).isEqualTo("Timmy");
+        assertThat(Users.getUser("Jimmy")).isEqualTo(jimmy);
+        assertThat(Users.getUser("Timmy")).isEqualTo(timmy);
+
+    }
+
 
 }

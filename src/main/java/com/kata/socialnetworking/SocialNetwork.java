@@ -30,7 +30,7 @@ public class SocialNetwork {
                 String user = param[0];
                 String post = param[1];
 
-                Users.MAPPING.get(user).updateTimeline(post);
+                Users.getUser(user).updateTimeline(post);
 
             } else if (cmd.contains("follows")) {
                 //follows:
@@ -39,7 +39,7 @@ public class SocialNetwork {
                 String user1 = param[0];
                 String user2 = param[1];
 
-                Users.MAPPING.get(user1).follows(Users.MAPPING.get(user2));
+                Users.getUser(user1).follows(Users.getUser(user2));
 
             } else if (cmd.contains("wall")) {
                 //print wall:
@@ -47,7 +47,7 @@ public class SocialNetwork {
                 param = cmd.split(WALL_DELIMITER);
 
                 try {
-                    System.out.println(Users.MAPPING.get(param[0]).printWall());
+                    System.out.println(Users.getUser(param[0]).printWall());
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -55,7 +55,7 @@ public class SocialNetwork {
             } else if (!cmd.equals("")) {
 
                 try {
-                    System.out.println(Users.MAPPING.get(cmd).printTimeline());
+                    System.out.println(Users.getUser(cmd).printTimeline());
                 } catch (ParseException f) {
                     f.printStackTrace();
                 }
