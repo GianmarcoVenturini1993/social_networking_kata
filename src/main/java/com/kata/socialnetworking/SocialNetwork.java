@@ -17,7 +17,6 @@ public class SocialNetwork {
 
     public static void main(String[] args) {
 
-        String[] param;
         Scanner sc = new Scanner(System.in);
 
         while (sc.hasNextLine()) {
@@ -48,9 +47,9 @@ public class SocialNetwork {
                 command.doCommand(cmd, null);
 
             } else  //I'm putting this here to prevent exception by pressing enter without feeding the System.in -- just a functional plus, meant for fluidity
+
                 break;
 
         }
-
     }
 }
