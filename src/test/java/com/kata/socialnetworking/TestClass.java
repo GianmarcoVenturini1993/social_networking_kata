@@ -70,7 +70,6 @@ public class TestClass {
         Thread.sleep(4000);
         charlie.follows(alice);
 
-
         assertThat(alice.printTimeline()).isEqualTo("I love the weather today (8 seconds ago)\n");
         assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\n");
         assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\nAlice - I love the weather today (8 seconds ago)\n");
@@ -100,6 +99,19 @@ public class TestClass {
         assertThat(alice.printTimeline()).isEqualTo("I love the weather today (11 seconds ago)\n");
         assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (7 seconds ago)\n");
         assertThat(charlie.printWall()).isEqualTo("Bob - Good game though. (1 seconds ago)\nBob - Damn! We lost! (3 seconds ago)\nCharlie - I'm in New York today! Anyone wants to have a coffee? (7 seconds ago)\nAlice - I love the weather today (11 seconds ago)\n");
+    }
+
+    @Test
+    public void userCreation() {
+
+        SocialUser jimmy = UserFactory.createUser("Jimmy");
+        SocialUser timmy = UserFactory.createUser("Timmy");
+
+        assertThat(jimmy.getName()).isEqualTo("Jimmy");
+        assertThat(timmy.getName()).isEqualTo("Timmy");
+        assertThat(UserFactory.getUser("Jimmy")).isEqualTo(jimmy);
+        assertThat(UserFactory.getUser("Timmy")).isEqualTo(timmy);
+
     }
 
 
