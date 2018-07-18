@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="social-networking-kata:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="19d49347-97b5-4204-bd4f-27aa2b6f2e56" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +27,13 @@
       <file leaf-file-name="TestClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/kata/socialnetworking/TestClass.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="355">
+              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+=======
             <state relative-caret-position="-317">
               <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+>>>>>>> release/v2.0
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -503,6 +513,64 @@
             <path>
               <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
               <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="social_networking_kata_jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="kata" type="462c0819:PsiDirectoryNode" />
+              <item name="socialnetworking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="social-networking-kata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="social_networking_kata" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -569,6 +637,9 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -588,7 +659,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SocialNetwork">
+  <component name="RunManager" selected="JAR Application.social_networking_kata">
     <configuration name="SocialNetwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kata.socialnetworking.SocialNetwork" />
       <module name="social-networking-kata_main" />
@@ -711,6 +782,17 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="social_networking_kata" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/social_networking_kata_jar/social-networking-kata.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="social-networking-kata:jar" />
+        </option>
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -734,11 +816,16 @@
       <listeners />
     </configuration>
     <list>
+      <item itemvalue="JAR Application.social_networking_kata" />
+      <item itemvalue="Application.SocialNetwork" />
       <item itemvalue="JUnit.TestClass" />
       <item itemvalue="JUnit.TestClass.followingAndprintingmultipleUserWallTest" />
+<<<<<<< HEAD
+=======
       <item itemvalue="Application.SocialNetwork" />
       <item itemvalue="JUnit.TestClass.postingOwnTimelineTest" />
       <item itemvalue="JUnit.TestClass.userCreation" />
+>>>>>>> release/v2.0
     </list>
     <recent_temporary>
       <list>
@@ -762,7 +849,7 @@
       <updated>1531475472833</updated>
       <workItem from="1531475478567" duration="9080000" />
       <workItem from="1531681274122" duration="4198000" />
-      <workItem from="1531766955778" duration="3585000" />
+      <workItem from="1531766955778" duration="4643000" />
     </task>
     <servers />
   </component>
@@ -799,11 +886,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="23435000" />
+=======
     <option name="totallyTimeSpent" value="28390000" />
+>>>>>>> release/v2.0
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="sbt" order="3" />
@@ -822,10 +912,15 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32969698" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31030303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+=======
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.31030303" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+>>>>>>> release/v2.0
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1390,8 +1485,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kata/socialnetworking/SocialNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="355">
+          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+=======
         <state relative-caret-position="439">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+>>>>>>> release/v2.0
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1401,9 +1501,82 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>social-networking-kata:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>social-networking-kata</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
