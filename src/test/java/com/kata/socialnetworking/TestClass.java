@@ -70,7 +70,6 @@ public class TestClass {
         Thread.sleep(4000);
         charlie.follows(alice);
 
-
         assertThat(alice.printTimeline()).isEqualTo("I love the weather today (8 seconds ago)\n");
         assertThat(charlie.printTimeline()).isEqualTo("I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\n");
         assertThat(charlie.printWall()).isEqualTo("Charlie - I'm in New York today! Anyone wants to have a coffee? (4 seconds ago)\nAlice - I love the weather today (8 seconds ago)\n");
