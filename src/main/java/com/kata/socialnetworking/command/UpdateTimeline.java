@@ -1,7 +1,6 @@
 package com.kata.socialnetworking.command;
 
-import com.kata.socialnetworking.Users;
-import com.kata.socialnetworking.command.CommandInterface;
+import com.kata.socialnetworking.UserFactory;
 
 public class UpdateTimeline implements CommandInterface {
     @Override
@@ -10,6 +9,6 @@ public class UpdateTimeline implements CommandInterface {
         String user = param[0];
         String post = param[1];
 
-        Users.getUser(user).updateTimeline(post);
+        UserFactory.getUser(user).updateTimeline(post);
     }
 }

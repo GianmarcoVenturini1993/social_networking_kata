@@ -1,6 +1,6 @@
 package com.kata.socialnetworking.command;
 
-import com.kata.socialnetworking.Users;
+import com.kata.socialnetworking.UserFactory;
 
 import java.text.ParseException;
 
@@ -10,7 +10,7 @@ public class PrintUserWall implements CommandInterface {
         String[] param = cmd.split(delimiter);
 
         try {
-            System.out.println(Users.getUser(param[0]).printWall());
+            System.out.println(UserFactory.getUser(param[0]).printWall());
         } catch (ParseException e) {
             e.printStackTrace();
         }

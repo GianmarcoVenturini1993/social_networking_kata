@@ -104,13 +104,13 @@ public class TestClass {
     @Test
     public void userCreation() {
 
-        SocialUser jimmy = Users.createUser("Jimmy");
-        SocialUser timmy = Users.createUser("Timmy");
+        SocialUser jimmy = UserFactory.createUser("Jimmy");
+        SocialUser timmy = UserFactory.createUser("Timmy");
 
         assertThat(jimmy.getName()).isEqualTo("Jimmy");
         assertThat(timmy.getName()).isEqualTo("Timmy");
-        assertThat(Users.getUser("Jimmy")).isEqualTo(jimmy);
-        assertThat(Users.getUser("Timmy")).isEqualTo(timmy);
+        assertThat(UserFactory.getUser("Jimmy")).isEqualTo(jimmy);
+        assertThat(UserFactory.getUser("Timmy")).isEqualTo(timmy);
 
     }
 

@@ -1,6 +1,6 @@
 package com.kata.socialnetworking.command;
 
-import com.kata.socialnetworking.Users;
+import com.kata.socialnetworking.UserFactory;
 
 public class FollowUser implements CommandInterface {
     @Override
@@ -9,6 +9,6 @@ public class FollowUser implements CommandInterface {
         String user1 = param[0];
         String user2 = param[1];
 
-        Users.getUser(user1).follows(Users.getUser(user2));
+        UserFactory.getUser(user1).follows(UserFactory.getUser(user2));
     }
 }

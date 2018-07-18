@@ -10,7 +10,7 @@ NB: although user creation is not concerned in the exercise draft/theme, it's im
     to the cluster.
  */
 
-public class Users {
+public class UserFactory {
 
     private static HashMap<String, SocialUser> MAPPING;
     static {
@@ -21,14 +21,21 @@ public class Users {
     }
 
     public static SocialUser getUser(String name) {
-        return MAPPING.get(name);
+        try {
+            return MAPPING.get(name);
+        } catch (NullPointerException e) {
+            return null;
+        }
     }
 
     public static SocialUser createUser(String name) {
         SocialUser user = new SocialUser(name);
-        MAPPING.put(name, user);
 
-        return user;
+        if (getUser(name) == null) {
+            MAPPING.put(name, user);
+            return user;
+        } else
+            return null;
     }
 }
 
